@@ -1,0 +1,28 @@
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    width: fit-content;
+
+    .actions__input-task {
+        @include defaultStyle("input");
+
+        width: 240px;
+
+        outline: none;
+    }
+
+    .actions__input-task--empty {
+        border-bottom: 1px solid red;
+    }
+
+    .add-btn {
+        @include defaultStyle("button");
+        cursor: pointer;
+
+        &:hover {
+            @include hoverStyle;
+        }
+    }
+}

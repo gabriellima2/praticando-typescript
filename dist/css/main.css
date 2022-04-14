@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding-top: 50px;
+  font-family: monospace;
+  color: #fff;
+  background-color: #111111;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: fit-content;
+}
+.actions .actions__input-task {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: monospace;
+  padding: 3px 5px;
+  font-size: 1.1em;
+  color: #fff;
+  background: none;
+  width: 240px;
+  outline: none;
+}
+.actions .actions__input-task--empty {
+  border-bottom: 1px solid red;
+}
+.actions .add-btn {
+  border: 1px solid #ccc;
+  font-family: monospace;
+  padding: 3px 5px;
+  font-size: 1.1em;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+}
+.actions .add-btn:hover {
+  transition: 0.2s ease-in;
+  background-color: rgba(230, 230, 230, 0.2392156863);
+}
+
+.main {
+  width: fit-content;
+  max-height: 600px;
+  overflow-x: auto;
+}
+.main .list {
+  list-style: none;
+}
+.main .list .list__task {
+  width: 400px;
+  max-height: 70px;
+  font-size: 1.2em;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  background-color: #1a1a1a;
+}
+.main .list .list__task--completed {
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+.main {
+    width: fit-content;
+    max-height: 600px;
+    overflow-x: auto;
+
+    .list {
+        list-style: none;
+
+        .list__task {
+            width: 400px;
+            max-height: 70px;
+
+            font-size: 1.2em;
+            word-wrap: break-word;
+
+            margin-bottom: 20px;
+            padding: 10px;
+
+            border-radius: 5px;
+
+            overflow-x: auto;
+            background-color: #1a1a1a;
+        }
+
+        .list__task--completed {
+            text-decoration: line-through;
+        }
+    }
+}

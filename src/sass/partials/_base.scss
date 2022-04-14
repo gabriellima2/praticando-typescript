@@ -1,0 +1,49 @@
+$font: monospace;
+$transition: 0.2s ease-in;
+$borderStyle: 1px solid #ccc;
+
+@mixin defaultStyle($elem) {
+    @if $elem == "input" {
+        border: none;
+        border-bottom: $borderStyle;
+    } @else if $elem == "button" {
+        border: $borderStyle;
+    }
+
+    font-family: $font;
+    padding: 3px 5px;
+    font-size: 1.1em;
+
+    color: #fff;
+
+    background: none;
+}
+
+@mixin hoverStyle() {
+    transition: $transition;
+    background-color: #e6e6e63d;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+
+    padding-top: 50px;
+
+    font-family: $font;
+    color: #fff;
+
+    background-color: #111111;
+}
